@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:15
+    container_name: Group_A_project_db
+    environment:
+      POSTGRES_USER: UMBCstudent
+      POSTGRES_PASSWORD: bongocat123
+      POSTGRES_DB: main_project_db
+    ports:
+      - "1234:80"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - ./init-db:/docker-entrypoint-initdb.d
+
+volumes:
+  db_data:
