@@ -65,7 +65,7 @@ payment_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 CONSTRAINT sub_PK PRIMARY KEY (sub_id));
 
 -- INSERT VALUES
-INSERT INTO sub (sub_id, service, cost) VALUES
+INSERT INTO subscription (sub_id, service, cost) VALUES
 (1, '3 Months Subscription Plan', 30),
 (2, '6 Months Subscription Plan', 60),
 (3, '1 Year Subscription Plan', 90);
