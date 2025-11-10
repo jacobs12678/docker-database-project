@@ -13,6 +13,3 @@ services:
       - ./init-db:/docker-entrypoint-initdb.d
 volumes:
   db_data:
-
-  networks:
-    mysql_network:
