@@ -45,7 +45,7 @@ sd_id int,
 sl_id_FK int,
 ls_id_FK int,
 keyword varchar(100),
-CONSTRAINT submitlog_PK PRIMARY KEY (sd_id),
+CONSTRAINT searchdisplay_PK PRIMARY KEY (sd_id),
 CONSTRAINT loginsign_FK FOREIGN KEY (ls_id_FK) REFERENCES loginsign (ls_id),
 CONSTRAINT submitlog_FK FOREIGN KEY (sl_id_FK) REFERENCES submitlog (sl_id));
 
