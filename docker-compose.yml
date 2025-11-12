@@ -1,13 +1,13 @@
 services:
   db:
-    image: postgres:15
+    image: mysql
     container_name: Group_A_project_db
     environment:
       POSTGRES_USER: UMBCstudent
       POSTGRES_PASSWORD: bongocat123
       POSTGRES_DB: main_project_db
     ports:
-      - "1234:80"
+      - "5432:5432"
     volumes:
       - db_data:/var/lib/postgresql/data
       - ./init-db:/docker-entrypoint-initdb.d
