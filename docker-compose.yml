@@ -3,9 +3,10 @@ services:
     image: mysql
     container_name: Group_A_project_db
     environment:
-      POSTGRES_USER: UMBCstudent
-      POSTGRES_PASSWORD: bongocat123
-      POSTGRES_DB: main_project_db
+      MYSQL_USER: UMBCstudent
+      MYSQL_PASSWORD: bongocat123
+      MYSQL_ROOT_PASSWORD: bongocat123
+      MYSQL_DB: main_project_db
     ports:
       - "5432:5432"
     volumes:
