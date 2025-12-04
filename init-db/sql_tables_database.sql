@@ -45,15 +45,17 @@ INSERT INTO subscription (sub_id, service, cost) VALUES
 CREATE TABLE ticket (
 t_id int, 
 confirmation varchar(50),
+type varchar(50),
+submitted timestamp,
 CONSTRAINT t_PK PRIMARY KEY (t_id));
 
 -- INSERT VALUES for ticket table
 INSERT INTO ticket (t_id, confirmation) VALUES
-(1, 'Confirmed');
+(1, 'Confirmed', 'Service Request', '2025-12-01 10:15:00');
 INSERT INTO ticket (t_id, confirmation) VALUES
-(2, 'Pending');
+(2, 'Pending', 'Billing and Payment', '2025-12-01 11:34:25');
 INSERT INTO ticket (t_id, confirmation) VALUES
-(3, 'Cancelled');
+(3, 'Cancelled', 'Technical Support', '2025-12-01 09:45:36');
 /*----------------------------------------------------------------------------------------------*/
 
 /* Login & Signup Table */
