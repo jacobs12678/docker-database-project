@@ -50,7 +50,7 @@ submitted timestamp,
 CONSTRAINT t_PK PRIMARY KEY (t_id));
 
 -- INSERT VALUES for ticket table
-INSERT INTO ticket (t_id, confirmation) VALUES
+INSERT INTO ticket (t_id, confirmation, type, submitted) VALUES
 (1, 'Confirmed', 'Service Request', '2025-12-01 10:15:00');
 INSERT INTO ticket (t_id, confirmation) VALUES
 (2, 'Pending', 'Billing and Payment', '2025-12-01 11:34:25');
